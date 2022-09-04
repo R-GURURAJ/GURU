@@ -1,0 +1,93 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    width: 100vh;
+    height: 100vh;
+    font-size: 0.88rem;
+    background-color:aquamarine;
+}
+.profile_photo{
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 45%;
+    overflow: hidden;
+}
+.container{
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    background: rebeccapurple;
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto 13rem;
+}
+aside{
+    height: 100vh;
+    background: beige;
+}
+aside .top{
+    background: rgb(239, 212, 160);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1.3rem;
+}
+
+/* SIDEBAR */
+aside .sidebar{
+    background-color:antiquewhite;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    position: relative;
+    top: 3rem;
+}
+
+aside h3{
+    font-weight: 500;
+
+}
+aside .sidebar a{
+    display: flex;
+    color: rgb(54, 45, 87);
+    margin-left: 2rem;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    height: 5rem;
+    transition: all 300ms ease;
+}
+aside .sidebar a span{
+    transition: all 300ms ease;
+    font-size: 1.9rem;
+}
+aside .sidebar a:last-child{
+    position: absolute;
+    bottom:1rem;
+    width:100%;
+}
+aside .sidebar a.active{
+    background: rgb(65, 65, 145);
+    color: red;
+    margin-left: 0;
+}
+aside .sidebar a.active::before{
+    content: "";
+    width: 6px;
+    height: 100%;
+    background: rgb(37, 223, 211);
+}
+aside .sidebar a.active span{
+    color: rgb(202, 77, 152);
+    margin-left: calc(1rem -3rem);
+}
+aside .sidebar a:hover{
+    color: rgb(146, 136, 136);
+}
+aside .sidebar a:hover span{ 
+    margin-left: 1rem;
+}
